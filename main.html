@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Job App Form</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<!-- the entire body must be written by student -->
-	<div>
-       <label for="username">Name:</label><br/>
-       <input type="text" name="username" placeholder="Name" required>
-       <input type="text"id="name" name="username" placeholder="Name" required>
-    </div>
-	<br>
-	<div>
-        <lable for="email">Email:</lable><br/>
-        <input type="text" name="email" placeholder="Email" required >
-        <input type="text"  id="emai"name="email" placeholder="Email" required >
-    </div>
-	 <br>
-	<div>
-@@ -35,18 +35,18 @@
-       </div>
-	 <div>
-        <lable for="age">Age:</lable><br/>
-        <input type="text" name="Age" placeholder="Age" required >
-        <input type="text" name="Age"  id="ag"placeholder="Age" required >
-    </div>
-	<div>
-        <input type="date" required><br/>
-        <input type="date" id="dat" required><br/>
-	</div>
-	<div>
-        <lable for="password">password:</lable><br/>
-        <input type="password" name="password" required><br/>
-        <input type="password" name="password" id="pass" required><br/>
-       </div>
-	<div> 
-		<label for="submit">Submit</label><br>
-         <input type="submit" value="Submit"></input>
-         <input type="submit" id="sub" value="Submit"></input>
-
-       </div>
-
- 
+	<form method="post">
+		<div>
+		<label for="name">Name</label>
+		<input type="text" id="name" required>
+			</div>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" id="email" required>
+		</div>
+		<div>
+			<label for="gender">Gender</label>
+			<label for="gender-m">Male</label>
+			<input type="radio" id="gender-m" name="gender" required>
+			<label for="gender-f">Female</label>
+			<input type="radio" id="gender-f" name="gender" required>
+		</div>
+		<div>
+			<label for="laptop">Laptop Brands</label>
+			<select  id="laptop">
+				<option value="Apple">Apple</option>
+				<option value="Asus">Asus</option>
+				<option value="HP">HP</option>
+			</select>
+		</div>
+		<div>
+			<label for="age">Age</label>
+			<input type="number" id="age" required >
+		</div>
+		<div>
+			<label for="dob">DOB</label>
+			<input type="date" id="dob" required>
+		</div>
+		<div>
+		<label for="password">Password</label>
+			<input type="password" id="password" required>
+		</div>
+		<div>
+			<label id="portfolio">Portfolio</label>
+			<label for="portfolio">Portfolio</label>
+			<input type="url" id="portfolio">
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 </body>
